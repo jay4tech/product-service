@@ -20,7 +20,7 @@ public class ProductController {
     public Product createProduct(@RequestBody Product product) {
         return productService.createProduct(product);
     }
-    @PutMapping("/{id}")
+    @PutMapping
     public Product updateProduct(@RequestBody Product product) {
         return productService.updateProduct(product);
     }
