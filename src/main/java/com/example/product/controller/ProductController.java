@@ -12,6 +12,11 @@ public class ProductController {
     @Autowired
     private IProductService productService;
 
+    /**
+     *
+     * @param id
+     * @return
+     */
     @GetMapping("/{id}")
     public Product getProduct(@PathVariable Long id) {
         return productService.getProduct(id);
